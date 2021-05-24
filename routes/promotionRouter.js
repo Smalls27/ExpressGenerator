@@ -4,7 +4,7 @@ const Promotion = require('../models/promotion');
 
 promotionRouter.route('/')
 .get((req, res, next) => {
-    Promotion.find()
+    Promotion.find() 
     .then(promotions => {
         res.statusCode = 200;
         res.setHeader('Content-Type', 'application/json');
